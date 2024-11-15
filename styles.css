@@ -1,0 +1,109 @@
+:root {
+    interpolate-size: allow-keywords;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    margin: 0 2rem;
+    transition: background-color 200ms ease-in;
+}
+
+section {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Mono", monospace;
+}
+
+
+/* Nav Menu */
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: grey;
+}
+.nav-menu ul {
+    display: flex;
+}
+.nav-menu ul li {
+    list-style: none;
+    padding-left: 1rem;
+}
+.logo {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    color: teal;
+}
+
+
+/* About Section */
+
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.about-text {
+    padding-right: 4rem;
+}
+.about-img img{
+    max-height: 18rem;
+}
+
+
+/* Projects Section */
+
+
+details {
+    cursor: pointer;
+}
+
+
+.details-content {
+    padding: 1rem 0;
+    font-style: italic;
+    font-size: .9rem;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 350ms ease-out, opacity 350ms ease-out;
+}
+
+
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+.project-title h3 {
+    display: inline;
+    font-weight: 400;
+  }
+.project-image {
+    width: 50%;
+    border-radius: .75rem;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+  }
+.color-red { --bg-color: rgba(207, 38, 46, .25); }
+.color-blue { --bg-color: rgba(6, 90, 111, .25); }
+.color-green { --bg-color: rgba(153, 168, 52, .25); }
+.color-orange { --bg-color: rgba(247, 106, 35, .25); }
