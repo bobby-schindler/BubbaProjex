@@ -114,14 +114,11 @@ summary {
 /* Footer */
 footer {
     width: 100%;
+    text-align: center;
+    margin: 4rem 0;
 }
 
-footer div {
-    margin: 0 auto;
-    width: 300px;
-}
-
-footer div span {
+footer span {
     color: red;
 }
 
@@ -131,6 +128,13 @@ footer div span {
 @media only screen and (max-width: 768px) {
     .about-wrapper {
         flex-wrap: wrap;
+    }
+    .project-image {
+        width: 100%;
+    }
+    .about-text {
+        padding-right: 0;
+        width: 100%;
     }
 }
 
