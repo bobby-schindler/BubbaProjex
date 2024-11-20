@@ -63,7 +63,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 4rem;
 }
 .about-img img{
-    max-height: 18rem;
+    max-height: 20rem;
+    margin: .83em 0;
+    font-size: 1.5em;
 }
 
 
@@ -107,3 +109,40 @@ summary {
 .color-blue { --bg-color: rgba(6, 90, 111, .25); }
 .color-green { --bg-color: rgba(153, 168, 52, .25); }
 .color-orange { --bg-color: rgba(247, 106, 35, .25); }
+
+
+/* Footer */
+footer {
+    width: 100%;
+}
+
+footer div {
+    margin: 0 auto;
+    width: 300px;
+}
+
+footer div span {
+    color: red;
+}
+
+
+/* Mobile Edits - Responsive */
+
+@media only screen and (max-width: 768px) {
+    .about-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Contact Page */
+
+
+/* Contact Section */
+
+.social {
+    width: 48px;
+    display: inline-block;
+    padding-right: 1rem;
+}
+
